@@ -1,12 +1,13 @@
 var city = document.querySelector(".input-city");
 var icon = document.querySelector(".icon");
+var key = "0132a3970202dfed49ef16da500f3701"
 console.log(city);
 document.addEventListener("keyup", (param) => {
   if (param.keyCode === 13) {
     fetch(
-      "https://api.openweathermap.org/data/2.5/weather?q=" +
+      `https://api.openweathermap.org/data/2.5/weather?q=` +
         city.value +
-        "&units=metric&appid=0132a3970202dfed49ef16da500f3701"
+        `&units=metric&appid=${key}`
     )
       .then((response) => response.json())
       .then((data) => {
