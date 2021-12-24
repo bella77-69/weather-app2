@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    to right bottom,
+    #836273,
+    #71546a,
+    #5e4762,
+    #4a3b59,
+    #343050
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../assets/images/neuquen_sunset_1920_jpg\ by\ Gustavo\ Zambelli.jpg");
+
+  background-size: cover;
+  height: 77%;
+  width: 30%;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.input-city {
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  width: 70%;
+  height: 3rem;
+  align-self: center;
+  box-shadow: 5px 5px 20px;
+  text-align: center;
+  font-size: 25px;
+}
+.input-city::placeholder {
+  text-align: center;
+}
+#temp {
+  font-size: 70px;
+  color: white;
+  text-shadow: -2px 4px 0 rgba(0, 0, 0, 0.3);
+  font-family: "KoHo", sans-serif;
+}
+#city {
+  margin-top: 5rem;
+}
+#city::first-letter {
+  text-transform: uppercase;
+}
+#city,
+.weather {
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-family: "KoHo", sans-serif;
+}
+#temp-min,
+#temp-max {
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-family: "KoHo", sans-serif;
+}
+.center,
+.end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.icon {
+  width: 5rem;
+}
+@media screen and (max-width: 776px) {
+  .cont {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cont {
+    width: 85%;
+  }
+}
